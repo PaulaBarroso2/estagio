@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cadastro.css">
+  <script src="cadastro.js"></script>
+  <title>Formulário de inscrição</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Crie uma conta</h1>
+
+    <form action="/cadastro" method="post">
+      <input type="text" name="nome" placeholder="Nome">
+      <input type="email" name="email" placeholder="E-mail">
+      <input type="password" name="senha" placeholder="Senha">
+      <div class="or-divider"></div>
+    </form>
+      
+    <button type="button" onclick="window.location.href='/alteracao'">Criar conta</button>
+
+    <p>Ou entrar com</p>
+
+    <div class="social-login social-login-apple">
+      <a href="#">
+        <img src="apple-logo.png" alt="Logotipo da Apple" class="apple-logo">
+        <span class="social-text">Entrar com Apple</span>
+      </a>
+    </div>
+
+    <div class="social-login social-login-google">
+      <a href="#">
+        <img src="google-logo.png" alt="Logotipo da Google" class="google-logo">
+        <span class="social-text">Entrar com Google</span>
+      </a>
+    </div>
+  </div>
+
+  <p>Já tem uma conta? <a href="#">Faça login</a></p>
+</body>
+</html>
+

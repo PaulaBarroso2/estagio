@@ -1,0 +1,130 @@
+body {
+font-family: sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+}
+
+.container {
+  width: 280px; /* Ajuste a largura conforme necessário */
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  width: 280px; /* Largura do formulário ajustada */
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.or-divider {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.or-divider p {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+button {
+  background-color: #0f8000;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+}
+  
+  .social-login {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  .social-login a {
+    width: 95%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    text-align: center; 
+    
+  }
+  
+
+  .social-login .apple-logo {
+    width: 40px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    
+
+  }
+  .social-login .google-logo {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    top: 10px;
+    margin-left: 30px;
+  }
+  
+  .social-login .social-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  body p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  @media (max-width: 768px) {
+    .social-login {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+.social-login a {
+  margin-bottom: 0;
+}
+
+  
+  
+  
+  
+  

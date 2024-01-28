@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="alteracao.css">
+  <script src="alteracao.js"></script>
+  <title>Formulário de Perfil</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><img src="inicio.png" alt="Início">    
+         <br>
+      Início</a></li>
+      <li><a href="#"><img src="moeda.png" alt="Transações">
+        <br>
+        Transações</a></li>
+      <li><a href="#"><img src="calendario.png" alt="Adicionar"> 
+        <br>
+        Adicionar</a></li>
+      <li><a href="#"><img src="grafico.png" alt="Relatórios"> 
+        <br>
+        Relatórios</a></li>
+      <li><a href="#"><img src="pessoa.png" alt="Perfil"> 
+        <br>
+        Perfil</a></li>
+    </ul>
+  </nav>
+
+  <form action="/alteracao" method="post" onsubmit="return mostrarAlert()">
+    <h1>Perfil</h1>
+    <div class="field">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Paula Barroso">
+    </div>
+
+    <div class="field">
+      <label for="celular">Seu celular/ WhatsApp</label>
+      <input type="tel" id="celular" name="celular" placeholder="Digite seu celular,é obrigatório">
+    </div>
+
+    <div class="field">
+      <label for="email"> Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="paulabarrossantoss@gmail.com">
+    </div>
+
+    <div class="field">
+      <label for="profissao">Sua profissão</label>
+      <input type="text" id="profissao" name="profissao" placeholder="Qual sua profissão?">
+    </div>
+
+    <div class="field">
+      <label for="salario">Seu salário</label>
+      <input type="number" id="salario" name="salario" placeholder="Qual seu salário?">
+    </div>
+
+    <fieldset>
+      <legend>Estado Civil</legend>
+      <div class="field">
+        <label for="casado">Casado</label>
+        <input type="radio" id="casado_sim" name="casado" value="true" required>
+        <label for="casado_sim">Sim</label>
+        <input type="radio" id="casado_nao" name="casado" value="false" required>
+        <label for="casado_nao">Não</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Filhos</legend>
+      <div class="field">
+        <label for="filhos">Filhos</label>
+        <input type="radio" id="filhos_sim" name="filhos" value="true" required>
+        <label for="filhos_sim">Sim</label>
+        <input type="radio" id="filhos_nao" name="filhos" value="false" required>
+        <label for="filhos_nao">Não</label>
+      </div>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
